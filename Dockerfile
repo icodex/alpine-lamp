@@ -113,4 +113,7 @@ RUN find /var/log/ -type f -exec rm -f {} \;
 EXPOSE 80
 EXPOSE 22
 
+# VOLUME
+VOLUME /app
+
 CMD ["supervisord", "-n"]
