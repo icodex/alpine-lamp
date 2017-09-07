@@ -114,6 +114,6 @@ EXPOSE 80
 EXPOSE 22
 
 # VOLUME
-VOLUME /app
+VOLUME ["/app", "/var/log"]
 
 CMD ["supervisord", "-n"]
